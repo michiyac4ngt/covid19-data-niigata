@@ -2,6 +2,7 @@ import datetime
 import pandas as pd
 import requests
 import simplejson as json
+import codecs
 
 
 def convert():
@@ -138,5 +139,5 @@ def convert():
         }
     }
 
-    with open('dist/data.json', 'w') as f:
+    with codecs.open("dist/data.json", "w", "utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False, ignore_nan=True)
