@@ -5,7 +5,7 @@ import simplejson as json
 
 
 def convert():
-    base_url = 'https://docs.google.com/spreadsheets/d/1daadRce3i3gyz6ufTN1xwz3N52McVt99FwtppYWuc7o'
+    base_url = 'https://docs.google.com/spreadsheets/d/1bf7oJMviHhaa6_f6n-15gOzf3EMTSZp1HROaJoYf6qs'
 
     contacts_url = f"{base_url}/export?format=csv&gid=0"
     querents_url = f"{base_url}/export?format=csv&gid=1956045137"
