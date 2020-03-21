@@ -11,4 +11,4 @@ def create_csv(url):
     houkoku_table['居住地'] = houkoku_table['居住地'].replace('\r', '', regex=True)
     houkoku_table['職業'] = houkoku_table['職業'].replace('\r', '', regex=True)
     houkoku_table = houkoku_table.set_index('患者No')
-    houkoku_table.to_csv('dist/patients.csv')
+    houkoku_table.to_csv('dist/patients.csv', encoding='cp932')

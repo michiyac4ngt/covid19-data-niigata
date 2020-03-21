@@ -11,4 +11,4 @@ def create_csv(url):
     kensa_table['結果判明日'] = pd.to_datetime(kensa_table['結果判明日'], format='%Y年%m月%d日')
     kensa_table = kensa_table.drop(columns=['empty'])
     kensa_table = kensa_table.set_index('結果判明日')
-    kensa_table.to_csv('dist/inspections.csv')
+    kensa_table.to_csv('dist/inspections.csv', encoding='cp932')

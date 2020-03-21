@@ -13,4 +13,4 @@ def create_csv(url):
     soudan_table['日'] = pd.to_datetime(soudan_table['日'], format='%Y年%m月%d日')
     soudan_table = soudan_table.drop(columns=['empty'])
     soudan_table = soudan_table.set_index('日')
-    soudan_table.to_csv('dist/querents.csv')
+    soudan_table.to_csv('dist/querents.csv', encoding='cp932')
