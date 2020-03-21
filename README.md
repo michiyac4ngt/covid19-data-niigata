@@ -30,3 +30,8 @@ $ pipenv run main convert
 ```
 $ pipenv install
 ```
+
+## Note
+- PythonのバージョンはPipfileにあるので適宜変更してください
+  Releaseバージョンの最上部が3.7.7になってたけど、その下に3.8.2もあったみたいなのでもとのままでも良かったかも
+
