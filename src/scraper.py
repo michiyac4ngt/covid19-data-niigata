@@ -8,7 +8,7 @@ base_url = 'https://www.pref.niigata.lg.jp'
 
 
 def get_url():
-    page_url = base_url + '/sec/kenko/bukan-haien.html'
+    page_url = base_url + '/sec/kenko/covid19.html'
     page = requests.get(page_url)
     soup = BeautifulSoup(page.content, 'html.parser')
 
