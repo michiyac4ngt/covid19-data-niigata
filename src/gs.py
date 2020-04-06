@@ -58,10 +58,10 @@ def convert():
     inspections = _inspections.to_dict(orient='records')
 
     _inspections_summary = inspections_summary_table[inspections_summary_table['labels'].isna() == False]
-    _inspections_summary['都内'] = _inspections_summary['都内'].astype(int)
+    _inspections_summary['県内'] = _inspections_summary['県内'].astype(int)
     _inspections_summary['その他'] = _inspections_summary['その他'].astype(int)
     _inspections_summary_label = _inspections_summary[['labels']]
-    _inspections_summary_data = _inspections_summary[['都内', 'その他']]
+    _inspections_summary_data = _inspections_summary[['県内', 'その他']]
     inspections_summary_label = _inspections_summary_label.values.squeeze().tolist()
     inspections_summary_data = _inspections_summary_data.to_dict(orient='list')
 
