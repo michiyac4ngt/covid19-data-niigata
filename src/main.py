@@ -2,7 +2,6 @@ from inspections import create_csv as create_inspections_csv
 from patients import create_csv as create_patients_csv
 from querents import create_csv as create_querents_csv
 from scraper import get_url
-
 from gs import convert
 import sys
 
